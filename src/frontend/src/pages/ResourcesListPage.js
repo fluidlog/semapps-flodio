@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from '@reach/router';
 import useQuery from '../api/useQuery';
 import ResourcePreview from '../ResourcePreview';
@@ -6,7 +6,10 @@ import resourcesTypes from '../resourcesTypes';
 import Page from '../Page';
 
 const ResourcesListPage = ({ type }) => {
+
   const resourceConfig = resourcesTypes[type];
+  let [typeState,setTypeState] = useState(type);
+  console.warn('----- ResourcesListPage',typeState);
   const { data } = useQuery(resourceConfig.container);
   return (
     <Page>

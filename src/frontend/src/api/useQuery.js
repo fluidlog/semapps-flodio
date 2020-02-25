@@ -4,10 +4,12 @@ import { useDispatch, useSelector } from 'react-redux';
 const initialValues = { data: null, loading: true, error: null };
 
 const useQuery = (uri, options = { cacheOnly: false }) => {
+  console.warn('---------- useQuery', uri);
   const dispatch = useDispatch();
   const cachedQuery = useSelector(state => state.api.queries[uri]);
 
   const callFetch = useCallback(() => {
+    console.warn('--------------- callFetch', uri);
     let { cacheOnly, headers, ...fetchOptions } = options;
     if (!cachedQuery) {
       dispatch({ type: 'QUERY_TRIGGER', uri });
