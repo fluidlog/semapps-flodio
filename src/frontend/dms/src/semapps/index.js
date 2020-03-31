@@ -5,6 +5,7 @@ export { default as httpClient } from './httpClient';
 
 export { default as ActivitiesList } from './activitypub/ActivitiesList';
 export { default as ActivityDescription } from './activitypub/ActivityDescription';
+export { default as InboxButton } from './activitypub/InboxButton';
 export { default as ActivitiesGrid } from './activitypub/ActivitiesGrid';
 export { default as CollectionList } from './activitypub/CollectionList';
 export { default as ActorsGrid } from './activitypub/ActorsGrid';

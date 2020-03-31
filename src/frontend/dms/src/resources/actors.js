@@ -1,7 +1,7 @@
 import React from 'react';
 import { List, Datagrid, TextField, useAuthenticated, ShowButton, Show, TabbedShowLayout, Tab } from 'react-admin';
 import Icon from '@material-ui/icons/Person';
-import { ActivitiesList, ActivitiesGrid, CollectionList, ActorsGrid } from '../semapps';
+import { ActivitiesList, ActivitiesGrid, CollectionList, ActorsGrid, InboxButton } from '../semapps';
 import SearchFilter from "../components/SearchFilter";
 
 export const ActorIcon = Icon;
@@ -18,6 +18,7 @@ export const ActorList = props => {
         <TextField source="as:name" label="Nom" />
         <TextField source="as:preferredUsername" label="Username" />
         <ShowButton basePath="/Actor" />
+        <InboxButton basePath="/Actor" />
       </Datagrid>
     </List>
   );

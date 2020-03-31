@@ -9,6 +9,7 @@ import { NoteList, NoteEdit, NoteIcon } from './resources/notes';
 import { ThemeList, ThemeIcon } from './resources/themes';
 import ontologies from './config/ontologies';
 import resources from "./config/resources";
+import customRoutes from './customRoutes';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       })}
       authProvider={authProvider(process.env.REACT_APP_MIDDLEWARE_URL)}
       logoutButton={LogoutButton}
+      customRoutes={customRoutes}
     >
       <Resource name="Actor" list={ActorList} show={ActorShow} icon={ActorIcon} options={{ label: 'Acteurs' }} />
       <Resource name="Activity" list={ActivityList} icon={ActivityIcon} options={{ label: 'Activités' }} />
