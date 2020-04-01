@@ -40,7 +40,7 @@ log:
 	$(DOCKER_COMPOSE) logs -f middleware frontend
 
 log-prod:
-	$(DOCKER_COMPOSE_PROD) logs -f middleware fuseki frontend mongo
+	$(DOCKER_COMPOSE_PROD) logs -f middleware fuseki frontend mongo nginx certbot
 
 start: docker-start
 
