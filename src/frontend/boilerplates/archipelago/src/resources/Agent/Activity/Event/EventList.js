@@ -1,7 +1,7 @@
 import React from 'react';
 import { DateField } from 'react-admin';
 import { List, SimpleList } from '@semapps/archipelago-layout';
-import EventFilterSidebar from "./EventFilterSidebar";
+import EventFilterSidebar from './EventFilterSidebar';
 
 const EventList = props => (
   <List aside={<EventFilterSidebar />} {...props}>

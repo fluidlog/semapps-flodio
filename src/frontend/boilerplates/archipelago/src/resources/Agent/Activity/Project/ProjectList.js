@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, SimpleList } from '@semapps/archipelago-layout';
-import ProjectFilterSidebar from "./ProjectFilterSidebar";
+import ProjectFilterSidebar from './ProjectFilterSidebar';
 
 const ProjectList = props => (
   <List aside={<ProjectFilterSidebar />} {...props}>
