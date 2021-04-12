@@ -17,7 +17,7 @@ module.exports = {
         {to: 'docs/about', label: 'About', position: 'left'},
         {to: 'docs/governance/team', label: 'Team', position: 'left'},
         {to: 'docs/governance/organisation-and-roles', label: 'Governance', position: 'left'},
-        {to: 'docs/guides/ldp-server', label: 'Documentation', position: 'left'},
+        {to: 'docs/guides/choose-feature', label: 'Documentation', position: 'left'},
         {to: 'docs/contribute/code', label: 'How to contribute', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {

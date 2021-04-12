@@ -7,7 +7,13 @@
 
 module.exports = {
   docs: {
-    Guides: ['guides/ldp-server','guides/dms','guides/activitypub'],
+    Guides: [
+      'guides/choose-feature',
+      'guides/ldp-server',
+      'guides/dms',
+      'guides/activitypub',
+      'guides/clone-semapps'
+    ],
     Packages: [
       'packages/activitypub',
       'packages/backup',
